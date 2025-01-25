@@ -1,9 +1,13 @@
 import { Character, ModelProviderName } from "./types.ts";
-
+import {
+    aptosPlugin,
+    WalletProvider,
+    TransferAptosToken,
+} from "@elizaos/plugin-aptos";
 export const defaultCharacter: Character = {
     name: "Eliza",
     username: "eliza",
-    plugins: [],
+    plugins: [aptosPlugin],
     clients: [],
     modelProvider: ModelProviderName.LLAMALOCAL,
     settings: {

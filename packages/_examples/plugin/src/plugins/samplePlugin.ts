@@ -1,4 +1,9 @@
 import { Plugin } from "@elizaos/core";
+import {
+    aptosPlugin,
+    WalletProvider,
+    TransferAptosToken,
+} from "../";
 import { createResourceAction } from "../actions/sampleAction";
 import { sampleProvider } from "../providers/sampleProvider";
 import { sampleEvaluator } from "../evaluators/sampleEvalutor";
